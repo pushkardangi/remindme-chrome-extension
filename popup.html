@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RemindMe</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      width: 350px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Add New Event</h1>
+
+    <form id="eventForm" class="form">
+      <div class="input-group">
+        <input type="text" class="gen-input" id="eventName" placeholder="Enter event name" autocomplete="off" required>
+      </div>
+
+      <div id="recurrence">
+        <div>Remind me:</div>
+        <label for="once">Once</label>
+        <input type="radio" name="recurrence" id="once" checked>
+          
+        <label for="everyYear">Every Year</label>
+        <input type="radio" name="recurrence" id="everyYear">
+      </div>
+
+      <div class="input-group">
+        <label for="eventDate" class="gen-label">Event Date</label>
+        <input type="date" class="gen-input" id="eventDate" required>
+      </div>
+
+      <button type="submit" class="btn">Add Event</button>
+    </form>
+
+    <div id="statusMessage"></div>
+
+    <div id="eventList"></div>
+    <div class="deleteDiv">
+      <button id="deleteAllBtn" class="delete-btn">Delete All Events</button>
+    </div>
+
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "RemindMe",
+    "version": "1.0",
+    "description": "A Chrome extension that reminds you of upcoming events.",
+    "permissions": ["storage", "notifications", "alarms"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "128": "icon.png"
+    }
+  }
+  
